@@ -1,4 +1,5 @@
 var note=require('../controllers/notes.js');
+var path=require("path");
 module.exports=function(app){
 	app.get("/notes", function(req, res){
 		note.all(req, res);
